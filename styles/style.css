@@ -1,0 +1,107 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-red: #E20000;
+    --color-text-grey: #181717;
+    --font-family-primary: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+}
+
+@font-face{
+	font-family: Montserrat;
+	src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+html , body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-primary);
+    color: var(--color-text-grey);
+}
+
+/* header */
+.li-active{
+    border: 1px var(--color-red) solid;
+}
+header{
+    position: fixed;
+}
+
+/* index */
+.-h1-index{
+    border: 1px white solid;
+}
+.-body-index{
+    height: 100vh;
+    background: url(../images/fondo-contacto.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
+}
+.-container-cohete{
+    height: 400px;
+}
+.cohete:hover{
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* sobre mi */
+.container-foto_perfil{
+    overflow: hidden;
+}
+
+.-div-img_perfil{
+    border: 8px white solid;
+}
+
+
+
+/* En comun */
+.-body-img{
+    background: url(../images/fondo-proyectos.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+}
+
+.icon-wsp{
+    position: fixed;
+    bottom: -15px;
+    right: 80px;
+}
+
+@media screen and (max-width: 1520px){
+    .-body-index{
+        background: url(../images/fondo-proyectos.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top 0 right 0;
+    }
+
+    .text-color-grey{
+        color: var(--color-text-grey);
+    }
+    .-h1-index{
+        border: 0px #181717 solid;
+        color: var(--color-text-grey);
+        text-align: center;
+    }
+
+    .icon-wsp{
+        position: fixed;
+        bottom: 40%;
+        right: -5px;
+    }
+
+    .li-active{
+        border: 0px var(--color-red) solid;
+        background-color: #E20000;
+        color: white;
+    }
+    
+}

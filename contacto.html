@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactame</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="./styles/hamburguer.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="-body-index ">
+    
+    <header class="bg-white w-full z-10 py-2 px-2 grid grid-cols-1 sm:justify-items-center sm:py-3">
+
+        <button class="justify-self-start hamburger hamburger--collapse-r sm:hidden" type="button" id="button-menu">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>  
+
+        <nav class="px-1 flex justify-center sm:content-center sm:w-full sm:justify-between xl:w-2/3 ">
+
+            <ul class="grid grid-row pt-10 justify-items-center h-96 hidden w-full sm:w-1/2 sm:grid sm:pt-0 sm:grid-cols-4 sm:h-full xl:w-2/5" id="ul-nav">
+                <li class="grid w-full rounded-full"><a class="grid content-center justify-items-center w-full h-full" href="./index.html">Inicio</a></li>
+                <li class="grid w-full rounded-full "><a class="grid content-center justify-items-center w-full h-full"  href="./sobremi.html" >Sobre mí</a></li>
+                <li class="grid w-full rounded-full"><a class="grid content-center justify-items-center w-full h-full"  href="./proyectos.html" >Proyectos</a></li>
+                <li class="grid w-full rounded-full li-active"><a class="grid content-center justify-items-center w-full h-full"  href="#" >Contacto</a></li>
+            </ul>
+            
+            <div class="div hidden sm:block bg-red-600 text-white text-xs sm:text-base py-2 px-3 sm:py-2 sm:px-4 rounded-full">
+                <a href="">Descargar mi CV</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class=" grid content-center animate__animated animate__backInDown justify-items-center p-8">
+
+        <section class="sm:w-3/5">
+
+            <h1 class="pt-24 text-red-500 text-4xl font-bold">Contacto</h1>
+
+            <div class=" grid lg:grid-cols-2 h-96 py-16" id="container-contact">
+
+                <h2 class="text-sm text-gray-600 pb-10">Te invito a que te contactes enviándome un mensaje o bien por whatsapp.</h2>
+                <form class="grid grid-cols-1 gap-5 justify-start" id="form-contact">
+
+                    <!-- nombre -->
+                    <input 
+                    required  
+                    pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                    title="Solo letras en el nombre" 
+                    class="border-solid px-3 py-3 border-gray-300 border rounded-xl shadow shadow-lg" 
+                    name="name" 
+                    autocomplete="off"
+                    type="text" 
+                    placeholder="Nombre">
+
+                    <!-- correo -->
+                    <input 
+                    required 
+                    class="border-solid px-3 py-3 border-gray-300 border rounded-xl shadow shadow-lg" 
+                    name="email" 
+                    type="email" 
+                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                    title="ingrese un correo valido"
+                    placeholder="Correo">
+
+                    <!-- numero -->
+                    <input 
+                    required 
+                    class="border-solid px-3 py-3 border-gray-300 border rounded-xl shadow shadow-lg" 
+                    name="number" 
+                    type="tel" 
+                    placeholder="Ingrese todo junto. Ej: 54351888888"
+                    title="Chequea que sea correcto el numero"
+                    pattern="[0-9]{12}"
+                    autocomplete="off"
+                    >
+
+                    <!-- textarea -->
+                    <textarea required class="border-solid px-3 py-3 border-gray-300 border rounded-xl shadow shadow-lg" name="info" cols="30" rows="5" placeholder="¿En qué puedo ayudarte?"></textarea>
+                    <div>
+                        <button class="bg-white animate__animated animate__heartBeat animate__delay-1s hover:bg-violet-900 hover:text-white px-5 py-2 rounded-xl shadow shadow-lg"  type="submit">ENVIAR</button>
+                    </div>
+                </form>
+                
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="grid grid-cols-1 py-8 sm:py-1 sm:grid-cols-3 justify-items-center mt-52">
+        <div class="grid p-3 sm:pl-10  grid-cols-2 sm:content-center sm:gap-5 ">
+            <a href="https://github.com/NicolasPotelJunot" class="mx-3" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" class="h-10"></a>
+            <a href="https://www.linkedin.com/in/nicolas-potel-junot-23a747165/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkeding" class="h-10 mx-3"></a>
+        </div>
+
+        <div class="grid text-white text-center lg:grid-cols-2 sm:content-center ">
+            <p class="text-color-grey my-2">Sponsor DePc Suite</p>
+            <p class="text-color-grey my-2">nicolaspoteljunot@gmail.com</p>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/543512185215?text=Hola%soy" target="_blank" class="grid justify-center h-18 w-12 sm:h-21 sm:w-20 sm:flex bg-green-600 pb-5 icon-wsp rounded-xl">
+        <img class="" src="https://stickersquid.co/wp-content/uploads/2019/02/whatsapp-logo-unsmushed.png" alt="">
+    </a>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

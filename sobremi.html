@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mi-Portfolio</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="./styles/hamburguer.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="-body-img">
+
+    <header class="bg-white w-full z-10 py-2 px-2 grid grid-cols-1 sm:justify-items-center sm:py-3">
+
+        <button class="justify-self-start hamburger hamburger--collapse-r sm:hidden" type="button" id="button-menu">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>  
+
+        <nav class="px-1 flex justify-center sm:content-center sm:w-full sm:justify-between xl:w-2/3 ">
+
+            <ul class="grid grid-row pt-10 justify-items-center h-96 hidden w-full sm:w-1/2 sm:grid sm:pt-0 sm:grid-cols-4 sm:h-full xl:w-2/5 " id="ul-nav">
+                <li class="grid w-full rounded-full"><a class="grid content-center justify-items-center w-full h-full" href="./index.html">Inicio</a></li>
+                <li class="grid w-full rounded-full li-active"><a class="grid content-center justify-items-center w-full h-full" href="#">Sobre mí</a></li>
+                <li class="grid w-full rounded-full"><a class="grid content-center justify-items-center w-full h-full" href="./proyectos.html" >Proyectos</a></li>
+                <li class="grid w-full rounded-full"><a class="grid content-center justify-items-center w-full h-full" href="./contacto.html" >Contacto</a></li>
+            </ul>
+            
+            <div class="div hidden sm:block bg-red-600 text-white text-xs sm:text-base py-2 px-3 sm:py-2 sm:px-4 rounded-full">
+                <a href="">Descargar mi CV</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="pt-24 px-10 lg:grid lg:pt-40 lg:grid-cols-5 sm:justify-center">
+
+        <div class="mb-10 lg:py-10 sm:col-span-2 sm:col-start-2">
+            <h1 class="text-4xl pb-5 text-center animate__animated animate__bounce text-red-600 font-bold sm:text-left">Sobre mi</h1>
+            <p class="text-lg">Apasionado por la tecnología y gestión de proyectos. Soy estudiante de cursos de programación front-end.</p>
+            <a class="inline-block bg-red-600 text-white my-5 text-base py-2 px-3 rounded-full " href="contacto.html">
+                Enviar mensaje
+            </a>
+        </div>
+        <div class=" grid sm:justify-center ">
+            <div class="rounded-full shadow-gray-500 shadow-lg container-foto_perfil sm:col-span-2 sm:w-64 sm:h-64 sm:grid -div-img_perfil">
+                <img src="./images/foto-perfil.jpg" alt="foto perfil" class="foto-perfil sm:w-64 sm:h-64">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-red-600 my-10 py-12 px-5 animate__animated animate__backInLeft">
+
+        <h2 class="text-5xl text-center text-white pb-10">Mis Skills</h2>
+        <div class=" grid grid-cols-2 gap-5 sm:grid-cols-4 sm:p-20 sm:justify-center sm:justify-items-center ">
+
+            <article class="lg:grayscale bg-white transition-all duration-300 hover:grayscale-0 cursor-pointer shadow-md shadow-gray-700 m-2 grid justify-center p-8 rounded-lg ">
+                <h3 class="text-center m-2 font-bold">HTML 5</h3>
+                <img class="w-24" src="./images/logos/html.png" alt="html">
+            </article>
+            <article class="lg:grayscale bg-white transition-all duration-300 hover:grayscale-0 cursor-pointer shadow-md shadow-gray-700 m-2 grid justify-center p-8 rounded-lg">
+                <h3 class="text-center font-bold m-2">CSS 3</h3>
+                <img class="w-24" src="./images/logos/css.png" alt="css">
+            </article>
+            <article class="lg:grayscale bg-white transition-all duration-300 hover:grayscale-0 cursor-pointer shadow-md shadow-gray-700 m-2 grid justify-center p-8 rounded-lg">
+                <h3 class="text-center font-bold m-2">Tailwind</h3>
+                <img class="w-24" src="./images/logos/tailwind.png" alt="tailwindcss">
+            </article>
+            <article class="lg:grayscale bg-white transition-all duration-300 hover:grayscale-0 cursor-pointer shadow-md shadow-gray-700 m-2 grid justify-center p-8 rounded-lg">
+                <h3 class="text-center font-bold m-2">Javascript</h3>
+                <img class="w-24" src="./images/logos/js.png" alt="javascript">
+            </article>
+            <article class="lg:grayscale bg-white transition-all duration-300 hover:grayscale-0 cursor-pointer shadow-md shadow-gray-700 m-2 grid justify-center p-8 rounded-lg">
+                <h3 class="text-center font-bold m-2">Figma</h3>
+                <img class="w-24" src="./images/logos/figma.png" alt="figma">
+            </article>
+            <article class="lg:grayscale bg-white transition-all duration-300 hover:grayscale-0 cursor-pointer shadow-md shadow-gray-700 m-2 grid justify-center p-8 rounded-lg">
+                <h3 class="text-center font-bold m-2">CorelDraw</h3>
+                <img class="w-24" src="./images/logos/corel.png" alt="CorelDraw">
+            </article>
+            <article class="lg:grayscale bg-white transition-all duration-300 hover:grayscale-0 cursor-pointer shadow-md shadow-gray-700 m-2 grid justify-center p-8 rounded-lg">
+                <h3 class="text-center font-bold m-2">Illustrator</h3>
+                <img class="w-24" src="./images/logos/illustrator.png" alt="Illustrator">
+            </article>
+            <article class="lg:grayscale bg-white transition-all duration-300 hover:grayscale-0 cursor-pointer shadow-md shadow-gray-700 m-2 grid justify-center p-8 rounded-lg">
+                <h3 class="text-center font-bold m-2">Photoshop</h3>
+                <img class="w-24" src="./images/logos/photoshop.png" alt="Photoshop">
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="px-5 py-10 sm:grid sm:content-center sm:content-center lg:px-40">
+
+        <div class="py-10 sm:shadow-lg sm:shadow-gray-400 sm:px-10">
+
+            <div class="flex h-7">
+                <img src="https://cdn-icons-png.flaticon.com/512/98/98168.png" alt="" class="h-full">
+                <h2 class="text-center flex text-xl font-semibold text-violet-800 mx-2">Experiencia laboral</h2>
+            </div>
+            <article class="my-8">   
+                <h2 class="text-gray-600 text-lg font-semibold">Director- Founder</h2>
+                <h3 class="text-lg font-bold text-violet-800">DEPCSUITE SA</h3>
+                <p class="text-sm text-gray-500 mb-2">2016 - presente</p>
+                <p class="text-sm text-gray-500">Lidero el desarrollo y posicionamiento de la empresa en sus tres líneas de negocio: cloud services, desarrollo de sistemas y educación IT en Buenos Aires, con sedes en Puerto Madero y Belgrano. Celebración de convenios estratégicos. Desarrollo de nuevos productos. Coordinación del área de sistemas y educación. Docente de cursos tecnológicos en: Laravel, PHP, HTML, CSS, Javascript, jQuery, AJAX, React.js, Bootstrap, GitLab, HTTP Apache2, SSL, MySQL, HAProxy, ProFTPd, virtualización con VMware ESXi, GNU/Linux Debian.</p>
+            </article>
+            <article class="my-8">   
+                <h2 class="text-gray-600 text-lg font-semibold">Gerente de sistemas - Co-Founder</h2>
+                <h3 class="text-lg font-bold text-violet-800">TodoCash</h3>
+                <p class="text-sm text-gray-500 mb-2">2021 - presente</p>
+                <p class="text-sm text-gray-500">Gestión de sistemas para la primera red de cajeros operada por una empresa no financiera con procesamiento independiente que funciona con billeteras virtuales.</p>
+            </article>
+            <article class="my-8">   
+                <h2 class="text-gray-600 text-lg font-semibold">Desarrollador Senior Full Stack</h2>
+                <h3 class="text-lg font-bold text-violet-800">Universidad de Buenos Aires</h3>
+                <p class="text-sm text-gray-500 mb-2">ago 2015 - ene 2020</p>
+                <p class="text-sm text-gray-500">Planeamiento del proyecto, seguimiento, reuniones de avance, estimación de entregables. Trato con clientes y equipos internos. Desarrollo de nuevos sistemas. Capacitar y organizar el área de desarrollo. Gestionar los ambientes de desarrollo. Administrar repositorio. Asignar tareas al equipo. Tecnologías: Laravel, PHP, HTML, CSS, Javascript, jQuery, AJAX, SQL Server, IIS, Bootstrap, Microsoft Project, GitLab.</p>
+            </article>
+            <article class="my-8">   
+                <h2 class="text-gray-600 text-lg font-semibold">Desarrollador Senior Full Stack</h2>
+                <h3 class="text-lg font-bold text-violet-800">ENACOM</h3>
+                <p class="text-sm text-gray-500 mb-2">jul 2012 - jun 2018</p>
+                <p class="text-sm text-gray-500">Diseño y desarrollo de sistemas internos para el organismo. Mantenimiento de los sistemas existentes. Gestión de base de datos y reportes. Trato con distintos clientes internos y equipos. Reuniones de avance. Organización del proyecto en Redmine. Resolución de pedidos mediante sistema de incidencias GLPI. Tecnologías: PHP, HTML, CSS, jQuery, Debian, AJAX, Javascript, jQuery, MySQL, PHP, Python, Mongo DB, PostgreSQL, firma electrónica, servicios REST, interfaz con SAP, XAMPP.</p>
+            </article>
+            <article class="my-8">   
+                <h2 class="text-gray-600 text-lg font-semibold">Consultor Desarrollador Freelance</h2>
+                <h3 class="text-lg font-bold text-violet-800">Certificado Digital SA</h3>
+                <p class="text-sm text-gray-500 mb-2">ago 2014 - dic 2016</p>
+                <p class="text-sm text-gray-500">Proyecto de desarrollo de sistemas web para los clientes de la consultora. Tecnologías: PHP, CSS, HTML, jQuery, Javascript, MySQL, WSDL.</p>
+            </article>
+            <article class="my-8">   
+                <h2 class="text-gray-600 text-lg font-semibold">Desarrollador Back-end y Front-end</h2>
+                <h3 class="text-lg font-bold text-violet-800">Agencia Golshy</h3>
+                <p class="text-sm text-gray-500 mb-2">jul 2011 - dic 2016</p>
+                <p class="text-sm text-gray-500">Desarrollo, implementación y mantenimiento de sistemas y páginas Web. Relevamiento de requisitos. Trato con el cliente. Desarrollo del Brief de marca y del sitio web. Participación en eventos de networking. Tecnologías: HTML, CSS, Javasacript, jQuery, MySQL, AJAX, API, Facebook, API Twitter, y API Youtube, Drupal, Wordpress.</p>
+            </article>
+            <article class="my-8">   
+                <h2 class="text-gray-600 text-lg font-semibold">Desarrollador Back-end y Front-end</h2>
+                <h3 class="text-lg font-bold text-violet-800">Globons SRL</h3>
+                <p class="text-sm text-gray-500 mb-2">abr 2010 - ene 2011</p>
+                <p class="text-sm text-gray-500">Desarrollo de sistemas web para los distintos proyectos de la empresa. Tecnologías: ASP.NET, C#, jQuery, AJAX, SQLServer, HTML, CSS.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="px-5 py-10 sm:grid sm:content-center sm:content-center lg:px-40">
+        <div class="py-10 sm:shadow-lg sm:shadow-gray-400 sm:px-10">
+            <div class="flex h-10 content-center">
+                <img src="https://images.vexels.com/media/users/3/153708/isolated/lists/93ff71fae04deba3cc47c7aafb4a1dcc-icono-plano-de-sombrero-de-graduacion.png" alt="" class="h-full">
+                <h2 class="text-center grid text-2xl content-center font-semibold text-red-600 mx-2">Formación acádémica</h2>
+            </div>
+
+            <div class="pt-10 grid justify-center xl:grid-cols-2 lg:gap-10 xl:justify-between ">
+
+                <article class=" my-8 sm:flex sm:gap-5"> 
+                    <div class="h-24 flex justify-center sm:justify-items-start">
+                        <img class="h-full" src="https://www.mcdonalds.com.ar/images/layout/mcdonalds-logo-footer-bg-white.png" alt="">
+                    </div>
+                    <div class="grid justify-center sm:justify-items-start">
+                        <h2 class="text-gray-600 text-lg font-semibold">Licenciado en Tecnología</h2>
+                        <h3 class="text-lg font-bold text-red-600">Escuela Argentina de Negocios</h3>
+                        <p class="text-lg text-gray-500 mb-2">2015 – 2020</p>
+                        <p class="text-lg text-gray-500">http://www.ean.edu.ar/</p>
+                    </div>  
+                </article>
+
+                <article class=" my-8 sm:flex sm:gap-5"> 
+                    <div class="h-24 flex justify-center sm:justify-items-start">
+                        <img class="h-full" src="http://assets.stickpng.com/images/5842996fa6515b1e0ad75add.png" alt="">
+                    </div>
+                    <div class="grid justify-center sm:justify-items-start">
+                        <h2 class="text-gray-600 text-lg font-semibold">Ingeniería en Informática</h2>
+                        <h3 class="text-lg font-bold text-red-600">Universidad Nacional de La Matanza</h3>
+                        <p class="text-lg text-gray-500 mb-2">2006 – 2010</p>
+                        <p class="text-lg text-gray-500">Materias aprobadas 20 de 41, 48%.</p>
+                        <p class="text-lg text-gray-500">http://unlam.edu.ar </p>  
+                    </div>  
+                </article>
+             
+                <article class=" my-8 sm:flex sm:gap-5"> 
+                    <div class="h-24 flex justify-center sm:justify-items-start">
+                        <img class="h-full" src="https://www.mostazasocial.com.uy/wp-content/uploads/2020/07/cropped-icono-mostaza-rojo.png" alt="">
+                    </div>
+                    <div class="grid justify-center sm:justify-items-start">
+                        <h2 class="text-gray-600 text-lg font-semibold">Técnico en Informática</h2>
+                        <h3 class="text-lg font-bold text-red-600">Colegio Parroquial San Juan XXIII</h3>
+                        <p class="text-lg text-gray-500 mb-2">2003 – 2005</p>
+                        <p class="text-lg text-gray-500">http://colparroquialjuan23.edu.ar</p>
+                    </div>  
+                </article>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="px-5 py-10 sm:grid sm:content-center sm:content-center lg:px-40">
+        <div class="py-10 sm:shadow-lg sm:shadow-gray-400 sm:px-10">
+            <div class="flex h-10 content-center">
+                <img src="https://images.vexels.com/media/users/3/153708/isolated/lists/93ff71fae04deba3cc47c7aafb4a1dcc-icono-plano-de-sombrero-de-graduacion.png" alt="" class="h-full">
+                <h2 class="text-center grid text-2xl content-center font-semibold text-red-600 mx-2">Cursos de desarrollo profesional</h2>
+            </div>
+
+            <div class="pt-10 grid justify-center xl:grid-cols-2 lg:gap-10 xl:justify-between ">
+
+                <article class=" my-8 sm:flex sm:gap-5"> 
+                    <div class="h-24 flex justify-center sm:justify-items-start">
+                        <img class="h-full" src="./images/logos/renault.png" alt="">
+                    </div>
+                    <div class="grid justify-center sm:justify-items-start">
+                        <h2 class="text-gray-600 text-lg font-semibold">Programa Ejecutivo en Project Management</h2>
+                        <h3 class="text-lg font-bold text-red-600">Universidad Tecnológica Nacional</h3>
+                        <p class="text-lg text-gray-500 mb-2">Expedición: may 2018</p>
+                    </div>  
+                </article>
+
+                <article class=" my-8 sm:flex sm:gap-5"> 
+                    <div class="h-24 flex justify-center sm:justify-items-start">
+                        <img class="h-full" src="./images/logos/fiat.png" alt="">
+                    </div>
+                    <div class="grid justify-center sm:justify-items-start">
+                        <h2 class="text-gray-600 text-lg font-semibold">Diplomatura en Marketing</h2>
+                        <h3 class="text-lg font-bold text-red-600">Escuela Argentina de Negocios</h3>
+                        <p class="text-lg text-gray-500 mb-2">Expedición: dic 2017</p>
+                    </div>  
+                </article>
+
+                <article class=" my-8 sm:flex sm:gap-5"> 
+                    <div class="h-24 flex justify-center sm:justify-items-start">
+                        <img class="h-full" src="./images/logos/toyota.png" alt="">
+                    </div>
+                    <div class="grid justify-center sm:justify-items-start">
+                        <h2 class="text-gray-600 text-lg font-semibold">Capacitación en Planes de Negocio</h2>
+                        <h3 class="text-lg font-bold text-red-600">Fundación Impulsar</h3>
+                        <p class="text-lg text-gray-500 mb-2">Expedición: may 2018</p>
+                    </div>  
+                </article>
+
+                <article class=" my-8 sm:flex sm:gap-5"> 
+                    <div class="h-24 flex justify-center sm:justify-items-start">
+                        <img class="h-full" src="./images/logos/yamaha.png" alt="">
+                    </div>
+                    <div class="grid justify-center sm:justify-items-start">
+                        <h2 class="text-gray-600 text-lg font-semibold">Capacitación en Planes de Negocio</h2>
+                        <h3 class="text-lg font-bold text-red-600">Fundación Impulsar</h3>
+                        <p class="text-lg text-gray-500 mb-2">Expedición: may 2018</p>
+                    </div>  
+                </article>
+
+                <article class=" my-8 sm:flex sm:gap-5"> 
+                    <div class="h-24 flex justify-center sm:justify-items-start">
+                        <img class="h-full" src="./images/logos/citroen.png" alt="">
+                    </div>
+                    <div class="grid justify-center sm:justify-items-start">
+                        <h2 class="text-gray-600 text-lg font-semibold">Capacitación en Planes de Negocio</h2>
+                        <h3 class="text-lg font-bold text-red-600">Fundación Impulsar</h3>
+                        <p class="text-lg text-gray-500 mb-2">Expedición: may 2018</p>
+                    </div>  
+                </article>
+
+                <article class=" my-8 sm:flex sm:gap-5"> 
+                    <div class="h-24 flex justify-center sm:justify-items-start">
+                        <img class="h-full" src="./images/logos/lifan.png" alt="">
+                    </div>
+                    <div class="grid justify-center sm:justify-items-start">
+                        <h2 class="text-gray-600 text-lg font-semibold">Capacitación en Planes de Negocio</h2>
+                        <h3 class="text-lg font-bold text-red-600">Fundación Impulsar</h3>
+                        <p class="text-lg text-gray-500 mb-2">Expedición: may 2018</p>
+                    </div>  
+                </article>
+
+
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="bg-gray-200 w-full p-3 sm:p-10 flex justify-center">
+
+        <div class=" grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+            <article class="bg-white grid p-14 shadow-gray-400 shadow-md sm:flex sm:h-48 sm:gap-10 rounded-3xl">
+
+                <img class="h-full" src="./images/idomas.png" alt="idiomas">
+                <div class="grid pt-10 justify-center sm:mr-24 sm:pt-0 sm:content-center ">
+                    <p class="text-lg">IDIOMAS</p>
+                    <p class="text-xs">ESPAÑOL - Nativo</p>
+                    <p class="text-xs">INGLÉS - Intermediate B2</p>                    
+                </div>
+
+            </article>
+
+            <article class="bg-white grid p-14 sm:p-6 shadow-gray-400 shadow-md sm:flex sm:h-48 sm:gap-10 rounded-3xl">
+                <img class="h-full " src="./images/hobbie.png" alt="hobbie">
+                <div class="grid pt-10  justify-center sm:pt-0 sm:mr-24 sm:content-center">
+                    <p class="text-lg">HOBBIES</p>
+                    <p class="text-xs">Age of Empires</p>
+                    <p class="text-xs">Cubo Rubik</p>                    
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+    <footer class="grid grid-cols-1 py-8 sm:grid-cols-3 justify-items-center">
+        <div class="grid p-3 sm:pl-10  grid-cols-2 sm:content-center sm:gap-5 ">
+            <a href="https://github.com/NicolasPotelJunot" class="mx-3" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" class="h-10"></a>
+            <a href="https://www.linkedin.com/in/nicolas-potel-junot-23a747165/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkeding" class="h-10 mx-3"></a>
+        </div>
+
+        <div class="grid text-white text-center lg:grid-cols-2 sm:content-center ">
+            <p class="text-color-grey my-2 text-gray-500">Sponsor DePc Suite</p>
+            <p class="text-color-grey my-2 text-gray-500">nicolaspoteljunot@gmail.com</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/543512185215?text=Hola%soy" target="_blank" class="grid justify-center h-18 w-12 sm:h-21 sm:w-20 sm:flex bg-green-600 pb-5 icon-wsp rounded-xl">
+        <img class="" src="https://stickersquid.co/wp-content/uploads/2019/02/whatsapp-logo-unsmushed.png" alt="">
+    </a>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
